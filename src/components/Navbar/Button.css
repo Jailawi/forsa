@@ -1,0 +1,146 @@
+.root {
+  /* --primary: #ef4d4f;
+  --secondary: #f27789; */
+
+  --p: #6556d2;
+  --s: #7060d4;
+}
+
+.container {
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 7px;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  font-size: 1em;
+  line-height: 60px;
+  text-align: center;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "muli", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 356, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.btn span {
+  background: var(--p);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 130, 250;
+  stroke-dashoffset: 140;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    display: none;
+  }
+}
+
+/*:root {
+  --primary: transparent;
+}
+
+.btn {
+  background-color: black;
+  cursor: pointer;
+  font-family: muli, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+.btn svg {
+  display: block;
+}
+
+ .btn svg rect {
+  margin: auto;
+  stroke-width: 2;
+  stroke-dasharray: 366, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.word {
+  position: relative;
+  font-family: muli, sans-serif;
+  background: -moz-linear-gradient(left, #ef4d4f 0%, #f27789 100%);
+  background: -webkit-linear-gradient(left, #ef4d4f 0%, #f27789 100%);
+  background: linear-gradient(to right, #ef4d4f 0%, #f27789 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 50, 300;
+  stroke-dashoffset: 300;
+} */
+
+/* .btn-primary {
+  background-color: var(--primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ef4d4f;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn-medium {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #ef4d4f;
+}
+
+.btn-large {
+  padding: 12pc 26px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #fff;
+} */
