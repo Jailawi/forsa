@@ -1,6 +1,6 @@
 :root {
   --primary: #007f8f;
-  --secondarydark: rgba(60, 14, 187, 0.5);
+  --secondarydark: #3c0ebb80;
   --secondary: #6859d3;
   --linear: linear-gradient(#6859d3, var(--secondarydark));
   --linear1: linear-gradient(to right, var(--primary), white);
@@ -11,6 +11,14 @@
   --test: #abc0f7;
   --nicegrey: #ecf2f3;
   --navText: white;
+  --darkBlue: #033063;
+  overflow-x: hidden;
+  /* background: var(--linear); */
+  /* background: linear-gradient(#5c9972, #007f8f); */
+  /*background: linear-gradient(#222222, #449C85);*/
+  /* background: linear-gradient(#6859d3, #3c0ebb80); */
+  /* background: var(--purple); */
+  /* background: var(--primary); */
   /* rgb(36, 40, 49); nice grey color */
   /* --primary: #046645; */
   /* --primary: #ef4d4f; */
@@ -21,13 +29,23 @@
 
 .navbar {
   /* background: #c7d1c1; */
-  background: var(--linear);
+  /* background: var(--linear); */
   /* background: #e6ebe3; */
+  /* background: var(--secondary); */
+  background-color: #222222;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.navbar.active {
+  background-color: var(--secondary);
+  position: fixed;
+  transition: all 0.5s ease;
 }
 
 .navbar-logo {
@@ -38,29 +56,30 @@
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  font-size: 40px;
+  color: #7BD6B9;
+  font-size: 50px;
   cursor: pointer;
   transition: all 0.5s ease;
-  /* margin-left: 150px; */
 }
 
 .logo-name {
+
   /* color: white; */
   /* font-family: muli, sans-serif; */
   /* font-family: Inter, sans-serif; */
   margin-left: 0.5rem;
   /* margin-top: 6px; */
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 30px;
+  grid-gap: 40px;
   list-style: none;
   text-align: center;
-  width: 50vw;
+  width: 60vw;
   justify-content: end;
   height: 100%;
 }
@@ -77,7 +96,7 @@
 .nav-links {
   color: var(--navText);
   /* font-family: muli, sans-serif; */
-  font-size: 16px;
+  font-size: 17px; /*16
   /* font-weight: bold; */
   text-decoration: none;
   /* text-decoration-style: solid; */
@@ -159,7 +178,7 @@
   }
 
   .nav-menu.active {
-    background: var(--linear);
+    background: black;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
