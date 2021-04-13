@@ -31,8 +31,8 @@ export const Button = ({
         <svg width="200" height="62">
           <defs>
               <linearGradient id="grad1">
-                  <stop offset="0%" stop-color="#ffffff"/>
-                  <stop offset="100%" stop-color="#ffffff" />
+                  <stop offset="0%" stop-color="#000000"/>
+                  <stop offset="100%" stop-color="#000000" />
               </linearGradient>
           </defs>
            <rect x="1" y="9" rx="10" fill="none" stroke="url(#grad1)" width="190" height="40"></rect>

@@ -25,7 +25,7 @@ function Navbar() {
         return (
             <nav className={navbar ? "navbar active" : "navbar"}>
                 <a className="navbar-logo" href="">
-                <i class="fas fa-universal-access"></i> <h2 className="logo-name">TBD</h2>
+                <i class="fas fa-universal-access"></i> <h2 className="logo-name">Kompec</h2>
                 </a>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
