@@ -1,3 +1,3 @@
 ## Preview video available in repository (Preview.mp4)
 
-![forsa_gif](https://user-images.githubusercontent.com/44978525/147130535-995ac2f4-f094-43a6-9a0b-6f789a8749e6.gif)
+![forsa_gif (1)](https://user-images.githubusercontent.com/44978525/147130857-3da264cd-0845-4835-93f3-17ead73c4275.gif)
